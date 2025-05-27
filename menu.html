@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menü – PizzaTeam Schüttorf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #fca311;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.5em;
+      color: #e63946;
+    }
+
+    .item {
+      margin-bottom: 15px;
+    }
+
+    .item-name {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .item-desc {
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    .item-price {
+      color: #fca311;
+      font-size: 0.95em;
+    }
+
+    .call-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    .call-button:hover {
+      background-color: #20b254;
+    }
+
+    @media (max-width: 600px) {
+      .item-name {
+        font-size: 1em;
+      }
+      .item-desc, .item-price {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Menü – PizzaTeam Schüttorf</h1>
+
+  <!-- Beispiel: PIZZA -->
+  <h2>Pizza (Größe 24 cm / 28 cm)</h2>
+
+  <div class="item">
+    <div class="item-name">1. Margherita</div>
+    <div class="item-desc">Tomatensoße, Käse</div>
+    <div class="item-price">5,00 € / 6,50 €</div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">2. Salami</div>
+    <div class="item-desc">Tomatensoße, Käse, Salami</div>
+    <div class="item-price">6,00 € / 7,50 €</div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">2a. Sucuk</div>
+    <div class="item-desc">Tomatensoße, Käse, Sucuk (Knoblauchwurst)</div>
+    <div class="item-price">6,00 € / 7,50 €</div>
+  </div>
+
+  <!-- (und so weiter für ALLE Pizzas...) -->
+
+  <!-- Beispiel: PARTY PIZZA -->
+  <h2>Party Pizza (Ø 50 cm)</h2>
+
+  <div class="item">
+    <div class="item-name">Margherita</div>
+    <div class="item-price">22,00 €</div>
+  </div>
+
+  <div class="item">
+    <div class="item-desc">jede weitere Zutat: 2–5 € (je nach Kategorie)</div>
+  </div>
+
+  <!-- Beispiel: KEBAB -->
+  <h2>Kebab</h2>
+
+  <div class="item">
+    <div class="item-name">27. Kebab</div>
+    <div class="item-desc">mit Eisbergsalat, Krautsalat, Zwiebeln, Soße</div>
+    <div class="item-price">5,50 € / 6,50 € / 8,00 €</div>
+  </div>
+
+  <!-- Beispiel: PASTA -->
+  <h2>Pasta</h2>
+
+  <div class="item">
+    <div class="item-name">38. Spaghetti Carbonara</div>
+    <div class="item-desc">mit Schinken, Knoblauch</div>
+    <div class="item-price">9,00 €</div>
+  </div>
+
+  <!-- Beispiel: SALATE -->
+  <h2>Salate</h2>
+
+  <div class="item">
+    <div class="item-name">45. Italienischer Salat</div>
+    <div class="item-desc">Eisbergsalat, Tomaten, Gurken, Käse, Vorderschinken, Zwiebeln</div>
+    <div class="item-price">7,50 €</div>
+  </div>
+
+  <!-- Beispiel: FLADENBROT -->
+  <h2>Fladenbrote</h2>
+
+  <div class="item">
+    <div class="item-name">53. Thunfisch-Fladenbrot</div>
+    <div class="item-desc">Käse, Thunfisch, Eisberg-Krautsalat, Zwiebeln, Soße</div>
+    <div class="item-price">6,50 € / 8,00 €</div>
+  </div>
+
+  <!-- Beispiel: AUFLAUF -->
+  <h2>Aufläufe</h2>
+
+  <div class="item">
+    <div class="item-name">56. Kebab-Auflauf</div>
+    <div class="item-desc">Kartoffelgratin, Kebab, Pilze, Tomaten, mit Käse überbacken</div>
+    <div class="item-price">9,50 €</div>
+  </div>
+
+  <!-- Beispiel: SNACKS -->
+  <h2>Snacks</h2>
+
+  <div class="item">
+    <div class="item-name">70. Pommes</div>
+    <div class="item-price">3,00 € / 4,00 €</div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">75. Portion Kebab oder Hähnchen</div>
+    <div class="item-price">6,50 € / 8,50 €</div>
+  </div>
+
+  <!-- Hinweis -->
+  <div class="item" style="margin-top:40px; font-size:0.9em; color:#aaa;">
+    Alle Nudelgerichte mit <span style="color:#fca311;">🧀</span> sind mit Käse überbacken und mit Sauce nach Wahl. Allergene siehe Restaurant.
+  </div>
+
+  <!-- Call-Button -->
+  <a href="tel:+495923995660" class="call-button">Anrufen</a>
+
+</body>
+</html>
