@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PizzaTeam Schüttorf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .menu-link {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #e63946;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .menu-link:hover {
+      background-color: #d62828;
+    }
+
+    .map-container {
+      margin-top: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    address {
+      margin: 20px 0;
+      font-style: normal;
+      font-size: 1em;
+    }
+
+    .call-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    .call-button:hover {
+      background-color: #20b254;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen bei PizzaTeam Schüttorf</h1>
+    <p>Beste Pizza, Kebap und mehr – direkt im Herzen von Schüttorf.</p>
+    <a class="menu-link" href="menu.html">Zum Menü</a>
+  </header>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.7300823817727!2d7.221979676577746!3d52.31913677198006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9ee931d4fa733%3A0x10f722e244fe7e0c!2sAm%20Markt%208%2C%2048465%20Sch%C3%BCttorf!5e0!3m2!1sde!2sde!4v1716818600000"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <address>
+      PizzaTeam Schüttorf<br>
+      Am Markt 8, 48465 Schüttorf<br>
+      Tel: <a href="tel:+495923995660" style="color:#25D366;">+49 5923 995660</a>
+    </address>
+  </div>
+
+  <a href="tel:+495923995660" class="call-button">Anrufen</a>
+
+</body>
+</html>
