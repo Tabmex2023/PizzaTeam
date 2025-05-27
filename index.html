@@ -2,57 +2,59 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PizzaTeam Schüttorf</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  background-color: #3e3e3c;
-  padding: 20px;
-  position: relative;
-}
-    h1 {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background-color: #3e3e3c;
+      padding: 20px;
+    }
+    h1, h2 {
       text-align: center;
-      font-size: 2em;
-      margin-top: 10px;
-      margin-bottom: 30px;
       color: #fca311;
     }
-
-    .logo-container {
+    .logo {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
-
-    .logo-container img {
+    .logo img {
       max-width: 200px;
       height: auto;
-      border-radius: 8px;
+      border-radius: 10px;
     }
-
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
-      background-color: #e63946;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 5px;
+    .menu-button {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      padding: 15px 30px;
+      background-color: #fca311;
+      color: #000;
       font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    a.button:hover {
-      background-color: #d62828;
-    }
-
-    .centered {
+      font-size: 1.1em;
       text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
     }
-
+    .info-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .address, .hours {
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: 0;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 10px;
+    }
     .call-button {
       position: fixed;
       bottom: 20px;
@@ -66,61 +68,65 @@
       text-decoration: none;
       z-index: 100;
     }
-
     .call-button:hover {
       background-color: #20b254;
     }
-
-    .address {
-      margin-top: 40px;
+    footer {
+      margin-top: 60px;
+      padding: 20px 10px;
       text-align: center;
-      font-size: 1em;
-      color: #ccc;
+      font-size: 0.75em;
+      color: #aaa;
     }
-
-    iframe {
-      border: none;
-      width: 100%;
-      height: 250px;
-      border-radius: 10px;
-      margin-top: 20px;
+    footer a {
+      color: #fca311;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <div class="logo-container">
+  <div class="logo">
     <a href="index.html">
-      <img src="https://i.postimg.cc/Fs0nGvs1/IMG-3581.jpg" alt="PizzaTeam Logo">
+      <img src="https://i.postimg.cc/Tw2k35rD/IMG-3581.jpg" alt="PizzaTeam Logo">
     </a>
   </div>
 
   <h1>Willkommen bei PizzaTeam Schüttorf</h1>
 
-  <div class="centered">
-    <a href="menu.html" class="button">➡️ Zur Speisekarte</a>
+  <div class="info-section">
+    <p>Die beste Pizza, Döner & mehr – direkt am Markt in Schüttorf!</p>
+    <a class="menu-button" href="menu.html">📋 Zur Speisekarte</a>
+  </div>
+
+  <div class="hours">
+    <h2>Öffnungszeiten</h2>
+    <p>Montag bis Sonntag<br>17:00 Uhr – 22:00 Uhr</p>
   </div>
 
   <div class="address">
-    <p>📍 Am Markt 8, 48465 Schüttorf</p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.5662706430537!2d7.224313176892652!3d52.32384387202564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8cf60d97b1e31%3A0xcfe94fd69a6e6fdf!2sAm%20Markt%208%2C%2048465%20Sch%C3%BCttorf!5e0!3m2!1sde!2smx!4v1716838453532!5m2!1sde!2smx" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
+    <h2>Adresse</h2>
+    <iframe
+      src="https://www.google.com/maps?q=PizzaTeam+Am+Markt+8+48465+Sch%C3%BCttorf&output=embed"
+      allowfullscreen>
     </iframe>
+    <p>PizzaTeam Schüttorf<br>Am Markt 8<br>48465 Schüttorf</p>
   </div>
 
-  <!-- Anruf-Button -->
-  <a href="tel:+495923995660" class="call-button">Anrufen</a>
-<footer style="margin-top: 60px; padding: 20px 10px; text-align: center; font-size: 0.75em; color: #aaa;">
-  <p>
-    PizzaTeam Schüttorf · Am Markt 8 · 48465 Schüttorf · 
-    <a href="tel:+495923995660" style="color:#fca311; text-decoration: none;">Tel: 05923 995660</a><br>
-    Inhaber: Max Mustermann · <a href="mailto:info@pizzateam-schuettorf.de" style="color:#fca311; text-decoration: none;">info@pizzateam-schuettorf.de</a><br>
-    Umsatzsteuer-ID: DE123456789
-  </p>
-</footer>
+  <a class="call-button" href="tel:+495923995660">📞 Anrufen</a>
+
+  <footer>
+    <p>
+      PizzaTeam Schüttorf · Am Markt 8 · 48465 Schüttorf · 
+      <a href="tel:+495923995660">Tel: 05923 995660</a><br>
+      Inhaber: Max Mustermann · 
+      <a href="mailto:info@pizzateam-schuettorf.de">info@pizzateam-schuettorf.de</a><br>
+      Umsatzsteuer-ID: DE123456789
+    </p>
+  </footer>
+
 </body>
 </html>
