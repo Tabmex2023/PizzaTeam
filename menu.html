@@ -13,39 +13,32 @@
       color: #fff;
       padding: 20px;
     }
-
     h1 {
       text-align: center;
       font-size: 2em;
       margin-bottom: 30px;
       color: #fca311;
     }
-
     h2 {
       margin-top: 40px;
       font-size: 1.5em;
       color: #e63946;
     }
-
     .item {
       margin-bottom: 15px;
     }
-
     .item-name {
       font-weight: bold;
       font-size: 1.1em;
     }
-
     .item-desc {
       font-size: 0.95em;
       color: #ccc;
     }
-
     .item-price {
       color: #fca311;
       font-size: 0.95em;
     }
-
     .call-button {
       position: fixed;
       bottom: 20px;
@@ -59,11 +52,9 @@
       text-decoration: none;
       z-index: 100;
     }
-
     .call-button:hover {
       background-color: #20b254;
     }
-
     @media (max-width: 600px) {
       .item-name {
         font-size: 1em;
@@ -75,105 +66,139 @@
   </style>
 </head>
 <body>
-
   <h1>Menü – PizzaTeam Schüttorf</h1>
+  <h2>Pizza (24 cm / 28 cm)</h2>
 
-  <!-- Beispiel: PIZZA -->
-  <h2>Pizza (Größe 24 cm / 28 cm)</h2>
+  <div class="item"><div class="item-name">1. Margherita</div><div class="item-desc">Tomatensoße, Käse</div><div class="item-price">5,00 / 6,50 €</div></div>
+  <div class="item"><div class="item-name">2. Salami</div><div class="item-desc">Tomatensoße, Käse, Salami</div><div class="item-price">6,00 / 7,50 €</div></div>
+  <div class="item"><div class="item-name">2a. Sucuk</div><div class="item-desc">Tomatensoße, Käse, Sucuk (Knoblauchwurst)</div><div class="item-price">6,00 / 7,50 €</div></div>
+  <div class="item"><div class="item-name">3. Presto</div><div class="item-desc">Tomatensoße, Käse, Salami, Pilze</div><div class="item-price">6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">4. Prosciutto</div><div class="item-desc">Tomatensoße, Käse, Vorderschinken</div><div class="item-price">6,00 / 7,50 €</div></div>
+  <div class="item"><div class="item-name">5. Mais</div><div class="item-desc">Tomatensoße, Käse, Vorderschinken, Mais</div><div class="item-price">6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">5a. Funghi</div><div class="item-desc">Tomatensoße, Käse, Pilze</div><div class="item-price">5,50 / 7,00 €</div></div>
+  <div class="item"><div class="item-name">6. Hawaii</div><div class="item-desc">Tomatensoße, Käse, Vorderschinken, Ananas</div><div class="item-price">6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">7. Italia</div><div class="item-desc">Tomatensoße, Käse, Vorderschinken, Pilze</div><div class="item-price">6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">8. Thunfisch</div><div class="item-desc">Tomatensoße, Käse, Thunfisch</div><div class="item-price">7,50 / 9,00 €</div></div>
+  <div class="item"><div class="item-name">8a. Tonno</div><div class="item-desc">Tomatensoße, Käse, Thunfisch, Paprika, Zwiebeln</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">9. Trio</div><div class="item-desc">Tomatensoße, Käse, Salami, Vorderschinken, Pilze</div><div class="item-price">7,50 / 9,00 €</div></div>
+  <div class="item"><div class="item-name">10. Panna</div><div class="item-desc">Sahnesoße, Käse, Vorderschinken, Pilze</div><div class="item-price">6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">10a. A la Panna</div><div class="item-desc">Sahnesoße, Käse, Vorderschinken, Broccoli, Gorgonzola</div><div class="item-price">8,00 / 9,50 €</div></div>
+  <div class="item"><div class="item-name">11. Vulkan (scharf)</div><div class="item-desc">Tomatensoße, Käse, Salami, Vorderschinken, Pilze</div><div class="item-price">7,50 / 9,00 €</div></div>
+  <div class="item"><div class="item-name">12. Quattro Stagioni</div><div class="item-desc">Tomatensoße, Käse, Salami, Vorderschinken, Paprika, Pilze</div><div class="item-price">8,00 / 9,50 €</div></div>
+  <div class="item"><div class="item-name">13. Calzone Spezial (zugeklappt)</div><div class="item-desc">Tomatensoße, Käse, Salami, Vorderschinken, Paprika, Pilze, Kebalfleisch</div><div class="item-price">9,00 / 10,50 €</div></div>
+  <div class="item"><div class="item-name">13a. Kebab Calzone (zugeklappt)</div><div class="item-desc">Tomatensoße, Käse, Kebalfleisch, Zwiebeln, Kraut, Tzatziki</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">13b. Hähnchen Calzone</div><div class="item-desc">Tomatensoße, Käse, Hähnchenfleisch, Zwiebeln, Kraut, Tzatziki</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">14. Bolognese</div><div class="item-desc">Tomatensoße, Käse, Salami, Hackfleisch, Pilze, Zwiebeln</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">14a. Rustica</div><div class="item-desc">Tomatensoße, Käse, Vorderschinken, Hackfleisch, Weißkäse, Peperoni</div><div class="item-price">9,00 / 10,50 €</div></div>
+  <div class="item"><div class="item-name">14b. Mexicano</div><div class="item-desc">Tomatensoße, Käse, Hackfleisch, Mais, Jalapeños, Zwiebeln</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">15. Vegetaria</div><div class="item-desc">Tomatensoße, Käse, Pilze, Knoblauchöl, Paprika, Zwiebeln, Oliven, Broccoli</div><div class="item-price">8,00 / 9,50 €</div></div>
+  <div class="item"><div class="item-name">15a. Veganer (ohne Käse)</div><div class="item-desc">Tomatensoße, Pilze, Knoblauchöl, Paprika, Mais, Zwiebeln, Broccoli</div><div class="item-price">8,00 / 9,50 €</div></div>
+  <div class="item"><div class="item-name">16. Marinara</div><div class="item-desc">Tomatensoße, Käse, Meeresfrüchte, Sardellen, Knoblauchöl</div><div class="item-price">10,00 / 11,50 €</div></div>
+  <div class="item"><div class="item-name">16a. Frutti di Mare</div><div class="item-desc">Tomatensoße, Käse, Meeresfrüchte, Knoblauchöl</div><div class="item-price">10,00 / 11,50 €</div></div>
+  <div class="item"><div class="item-name">17. Spinat</div><div class="item-desc">Tomatensoße, Käse, Spinat, Weichkäse, Knoblauchöl</div><div class="item-price">7,00 / 8,50 €</div></div>
+  <div class="item"><div class="item-name">17a. Popey</div><div class="item-desc">Tomatensoße, Käse, Spinat, Krabben, Weichkäse, Knoblauchöl</div><div class="item-price">9,50 / 11,00 €</div></div>
+    <div class="item"><div class="item-name">18. Broccoli</div><div class="item-desc">Tomatensoße, Käse, Broccoli, Knoblauchöl</div><div class="item-price">5,50 / 7,00 €</div></div>
+  <div class="item"><div class="item-name">19. Gorgonzola</div><div class="item-desc">Tomatensoße, Käse, Gorgonzola, Spinat</div><div class="item-price">7,50 / 9,00 €</div></div>
+  <div class="item"><div class="item-name">20. Cheesedream</div><div class="item-desc">Tomatensoße, Käse, Weichkäse, Mozzarella, Gorgonzola</div><div class="item-price">9,00 / 10,50 €</div></div>
+  <div class="item"><div class="item-name">20a. Caprese</div><div class="item-desc">Tomatensoße, Käse, frische Tomaten, Mozzarella</div><div class="item-price">6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">21. Kebabpizza</div><div class="item-desc">Tomatensoße, Käse, Kebapfleisch</div><div class="item-price">7,50 / 9,00 €</div></div>
+  <div class="item"><div class="item-name">21a. Kebabpizza "Spezial"</div><div class="item-desc">Tomatensoße, Käse, Kebapfleisch, Broccoli, Sauce Hollandaise</div><div class="item-price">9,00 / 10,50 €</div></div>
+  <div class="item"><div class="item-name">21b. Kebabpizza "Deluxe"</div><div class="item-desc">Tomatensoße, Käse, Kebapfleisch, frische Tomaten, Weichkäse, Zwiebeln</div><div class="item-price">9,50 / 11,00 €</div></div>
+  <div class="item"><div class="item-name">21c. Gourmet</div><div class="item-desc">Tomatensoße, Käse, Kebapfleisch, Spinat, frische Tomaten, Knoblauchöl, Weichkäse</div><div class="item-price">9,50 / 11,00 €</div></div>
+  <div class="item"><div class="item-name">22. Hähnchenpizza</div><div class="item-desc">Tomatensoße, Käse, Hähnchenfleisch, Paprika, Zwiebeln</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">22a. Hähnchenpizza "Deluxe"</div><div class="item-desc">Tomatensoße, Käse, Hähnchenfleisch, Paprika, Pilze, Broccoli, Sauce Hollandaise</div><div class="item-price">10,00 / 11,50 €</div></div>
+  <div class="item"><div class="item-name">23. La Palma (scharf)</div><div class="item-desc">Tomatensoße, Käse, Salami, Paprika, Pilze, Zwiebeln, Weichkäse, Knoblauchöl, Ei</div><div class="item-price">9,50 / 11,00 €</div></div>
 
-  <div class="item">
-    <div class="item-name">1. Margherita</div>
-    <div class="item-desc">Tomatensoße, Käse</div>
-    <div class="item-price">5,00 € / 6,50 €</div>
-  </div>
+  <h2>PizzaTeam-Spezialitäten</h2>
+  <div class="item"><div class="item-name">24. Schüttorf (scharf)</div><div class="item-desc">Tomatensoße, Käse, Salami, Paprika, Zwiebeln, Ei</div><div class="item-price">7,50 / 9,00 €</div></div>
+  <div class="item"><div class="item-name">24a. Suddendorf</div><div class="item-desc">Tomatensoße, Käse, Vorderschinken, Spargel, Broccoli, Sauce Hollandaise</div><div class="item-price">8,00 / 9,50 €</div></div>
+  <div class="item"><div class="item-name">24b. Quendorf</div><div class="item-desc">Tomatensoße, Käse, Salami, Spargel, Broccoli, Paprika, Ei</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">24c. Samern</div><div class="item-desc">Tomatensoße, Käse, Salami, Vorderschinken, Zwiebeln, Weichkäse</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">25. Pizza Team</div><div class="item-desc">Tomatensoße, Käse, Salami, Vorderschinken, Paprika, Pilze, Weichkäse</div><div class="item-price">9,00 / 10,50 €</div></div>
+  <div class="item"><div class="item-name">26. Firelfanz</div><div class="item-desc">Tomatensoße, Käse, Kebapfleisch, Broccoli, Paprika</div><div class="item-price">8,50 / 10,00 €</div></div>
+  <div class="item"><div class="item-name">26a. Eierschale</div><div class="item-desc">Tomatensoße, Käse, Salami, Kebapfleisch, Peperoni, Ei</div><div class="item-price">10,00 / 11,50 €</div></div>
+  <div class="item"><div class="item-name">26b. Istanbul</div><div class="item-desc">Tomatensoße, Käse, Sucuk, Paprika, Ei</div><div class="item-price">8,00 / 9,00 €</div></div>
+  <div class="item"><div class="item-name">26c. Alanya</div><div class="item-desc">Tomatensoße, Käse, Sucuk, Knoblauchwurst, Weichkäse, Peperoni, Ananas</div><div class="item-price">9,00 / 10,50 €</div></div>
+  <div class="item"><div class="item-name">26d. Antalya</div><div class="item-desc">Tomatensoße, Käse, Sucuk, Knoblauchwurst, Pilze, Broccoli, Sauce Hollandaise</div><div class="item-price">9,00 / 10,50 €</div></div>
 
-  <div class="item">
-    <div class="item-name">2. Salami</div>
-    <div class="item-desc">Tomatensoße, Käse, Salami</div>
-    <div class="item-price">6,00 € / 7,50 €</div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">2a. Sucuk</div>
-    <div class="item-desc">Tomatensoße, Käse, Sucuk (Knoblauchwurst)</div>
-    <div class="item-price">6,00 € / 7,50 €</div>
-  </div>
-
-  <!-- (und so weiter für ALLE Pizzas...) -->
-
-  <!-- Beispiel: PARTY PIZZA -->
   <h2>Party Pizza (Ø 50 cm)</h2>
+  <div class="item"><div class="item-name">Margherita</div><div class="item-price">22,00 €</div></div>
+  <div class="item"><div class="item-desc">jede weitere Zutat: Gemüse von A–Z + doppelt Käse: +2 €<br>Weichkäse, Mozzarella, Ei, Sucuk, Salami, Vorderschinken: +3 €<br>Hackfleisch, Gorgonzola: +4 €<br>Meeresfrüchte, Hähnchenfleisch, Kebapfleisch, Thunfisch, Sardellen, Krabben: +5 €</div></div>
 
-  <div class="item">
-    <div class="item-name">Margherita</div>
-    <div class="item-price">22,00 €</div>
-  </div>
-
-  <div class="item">
-    <div class="item-desc">jede weitere Zutat: 2–5 € (je nach Kategorie)</div>
-  </div>
-
-  <!-- Beispiel: KEBAB -->
   <h2>Kebab</h2>
+  <div class="item"><div class="item-name">27. Kebab</div><div class="item-desc">mit Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">5,50 € / 6,50 € / 8,00 €</div></div>
+  <div class="item"><div class="item-name">28. Kebab "Spezial"</div><div class="item-desc">mit Weichkäse oder Käse, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">6,00 / 7,00 / 8,50 €</div></div>
+  <div class="item"><div class="item-name">29. Hähnchenkebab</div><div class="item-desc">mit Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">5,50 / 6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">30. Hähnchenkebab "Spezial"</div><div class="item-desc">mit Weichkäse oder Käse, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">6,00 / 7,00 / 8,50 €</div></div>
+      <div class="item"><div class="item-name">30a. Team-Box</div><div class="item-desc">Kebab- oder Hähnchenfleisch, Pommes, Soße</div><div class="item-price">6,50 / 8,00 €</div></div>
+  <div class="item"><div class="item-name">30b. Falafel</div><div class="item-desc">mit Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">5,00 / 6,00 / 7,50 €</div></div>
+  <div class="item"><div class="item-name">31. Lahmacun (türkische Pizza)</div><div class="item-desc">mit Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">7,00 €</div></div>
+  <div class="item"><div class="item-name">32. Lahmacun "Spezial"</div><div class="item-desc">mit Kebapfleisch, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">33. Kebab-Teller</div><div class="item-desc">mit Kebapfleisch, Pommes, Eisbergsalat, Krautsalat, Soße</div><div class="item-price">12,50 €</div></div>
+  <div class="item"><div class="item-name">34. Hähnchen-Teller</div><div class="item-desc">mit Hähnchenfleisch, Pommes, Eisbergsalat, Krautsalat, Soße</div><div class="item-price">12,50 €</div></div>
+  <div class="item"><div class="item-name">35. Mix-Teller</div><div class="item-desc">mit Kebap- und Hähnchenfleisch, Pommes, Eisbergsalat, Krautsalat, Soße</div><div class="item-price">12,50 €</div></div>
+  <div class="item"><div class="item-name">36. Pizza-Team-Teller</div><div class="item-desc">mit Kebap- und Hähnchenfleisch, Pommes, Tomatensoße, Weichkäse, Eisbergsalat, Krautsalat, Soße</div><div class="item-price">14,50 €</div></div>
+  <div class="item"><div class="item-name">37. Kebab-Teller "Spezial"</div><div class="item-desc">mit Kebapfleisch, Pommes, Broccoli, Sauce Hollandaise, Eisbergsalat, Krautsalat, Soße</div><div class="item-price">14,50 €</div></div>
 
-  <div class="item">
-    <div class="item-name">27. Kebab</div>
-    <div class="item-desc">mit Eisbergsalat, Krautsalat, Zwiebeln, Soße</div>
-    <div class="item-price">5,50 € / 6,50 € / 8,00 €</div>
-  </div>
-
-  <!-- Beispiel: PASTA -->
   <h2>Pasta</h2>
+  <div class="item"><div class="item-name">38. Spaghetti Carbonara</div><div class="item-desc">Schinken, Knoblauch</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">39. Spaghetti</div><div class="item-price">8,00 €</div></div>
+  <div class="item"><div class="item-name">40. Rigatoni</div><div class="item-price">8,00 €</div></div>
+  <div class="item"><div class="item-name">41. Tortellini</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">42. Lasagne</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">43. Pasta Verdura</div><div class="item-desc">Tomatensoße, Pilze, Paprika, Broccoli, Zwiebeln, Knoblauchöl</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">44. Spaghetti Scampi</div><div class="item-desc">Scampi, Knoblauch, Petersilie, Chili</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">44a. Rigatoni Casarecce</div><div class="item-desc">Hähnchenfleisch, Pilze, Zwiebeln, frische Tomaten in Sahnesoße</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">44b. Tortellini Speciale</div><div class="item-desc">Gorgonzola-Sahnesoße</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">44c. Pasta Frutti de Mare</div><div class="item-desc">Meeresfrüchte in Pernod-Sahnesoße</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">44d. Pasta Arrabiata</div><div class="item-desc">Chili, frische Tomaten, Zwiebeln, Broccoli in Tomatensoße</div><div class="item-price">9,00 €</div></div>
+  <div class="item"><div class="item-name">44e. Pasta Quattro Formaggi</div><div class="item-desc">Gorgonzola, Mozzarella, Weichkäse, Käse in Sahnesoße</div><div class="item-price">9,00 €</div></div>
 
-  <div class="item">
-    <div class="item-name">38. Spaghetti Carbonara</div>
-    <div class="item-desc">mit Schinken, Knoblauch</div>
-    <div class="item-price">9,00 €</div>
-  </div>
-
-  <!-- Beispiel: SALATE -->
   <h2>Salate</h2>
+  <div class="item"><div class="item-name">45. Italienischer Salat</div><div class="item-desc">Eisbergsalat, Tomaten, Gurken, Käse, Vorderschinken, Zwiebeln</div><div class="item-price">7,50 €</div></div>
+  <div class="item"><div class="item-name">46. Chefsalat</div><div class="item-desc">Eisbergsalat, Tomaten, Gurken, Käse, Vorderschinken, Zwiebeln</div><div class="item-price">9,50 €</div></div>
+  <div class="item"><div class="item-name">47. Vegetarischer Salat</div><div class="item-desc">Eisbergsalat, Tomaten, Gurken, frischer Paprika, Pilze, Mais, Zwiebeln</div><div class="item-price">8,00 €</div></div>
+  <div class="item"><div class="item-name">48. Bauernsalat</div><div class="item-desc">Eisbergsalat, Tomaten, Gurken, Oliven, grüne Peperoni, Weichkäse</div><div class="item-price">8,00 €</div></div>
+  <div class="item"><div class="item-name">49. Salat Nizza</div><div class="item-desc">Eisbergsalat, Tomaten, Gurken, Zwiebeln, Peperoni, Oliven, Krabben</div><div class="item-price">9,50 €</div></div>
+  <div class="item"><div class="item-name">50. Tomatensalat</div><div class="item-desc">Tomaten, Zwiebeln, Thunfisch</div><div class="item-price">8,00 €</div></div>
+  <div class="item"><div class="item-name">51. Fitnesssalat</div><div class="item-desc">Eisbergsalat, Tomaten, Gurken, Hähnchenfleisch, Mais, Paprika</div><div class="item-price">9,50 €</div></div>
+  <div class="item"><div class="item-name">52. Exotiksalat</div><div class="item-desc">Eisbergsalat, Tomaten, Gurken, Vorderschinken, Ananas, Paprika, Mais, Peperoni</div><div class="item-price">8,50 €</div></div>
+    <h2>Fladenbrote</h2>
+  <div class="item"><div class="item-name">53. Käsefladenbrot</div><div class="item-desc">Käse, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">5,00 €</div></div>
+  <div class="item"><div class="item-name">54. Salami-Fladenbrot</div><div class="item-desc">Käse, Salami, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">6,50 €</div></div>
+  <div class="item"><div class="item-name">55. Schinken-Fladenbrot</div><div class="item-desc">Käse, Vorderschinken, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">6,50 €</div></div>
+  <div class="item"><div class="item-name">56. Thunfisch-Fladenbrot</div><div class="item-desc">Käse, Thunfisch, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">6,50 €</div></div>
+  <div class="item"><div class="item-name">57. Kebab-Fladenbrot</div><div class="item-desc">Käse, Kebapfleisch, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">6,50 €</div></div>
+  <div class="item"><div class="item-name">58. Hähnchen-Fladenbrot</div><div class="item-desc">Käse, Hähnchenfleisch, Eisbergsalat, Krautsalat, Zwiebeln, Soße</div><div class="item-price">6,50 €</div></div>
 
-  <div class="item">
-    <div class="item-name">45. Italienischer Salat</div>
-    <div class="item-desc">Eisbergsalat, Tomaten, Gurken, Käse, Vorderschinken, Zwiebeln</div>
-    <div class="item-price">7,50 €</div>
-  </div>
-
-  <!-- Beispiel: FLADENBROT -->
-  <h2>Fladenbrote</h2>
-
-  <div class="item">
-    <div class="item-name">53. Thunfisch-Fladenbrot</div>
-    <div class="item-desc">Käse, Thunfisch, Eisberg-Krautsalat, Zwiebeln, Soße</div>
-    <div class="item-price">6,50 € / 8,00 €</div>
-  </div>
-
-  <!-- Beispiel: AUFLAUF -->
   <h2>Aufläufe</h2>
+  <div class="item"><div class="item-name">59. Kartoffelgratin</div><div class="item-desc">mit Broccoli, Pilzen, Sauce Hollandaise, überbacken</div><div class="item-price">8,50 €</div></div>
+  <div class="item"><div class="item-name">60. Kebab-Auflauf</div><div class="item-desc">Kartoffelgratin, Kebapfleisch, Pilze, Tomaten, Sauce Hollandaise, überbacken</div><div class="item-price">9,50 €</div></div>
+  <div class="item"><div class="item-name">61. Hähnchen-Auflauf</div><div class="item-desc">Kartoffelgratin, Hähnchenfleisch, Pilze, Tomaten, Sauce Hollandaise, überbacken</div><div class="item-price">9,50 €</div></div>
+  <div class="item"><div class="item-name">62. Gemüseauflauf</div><div class="item-desc">Kartoffelgratin, Broccoli, Paprika, Zwiebeln, Mais, Tomaten, Sauce Hollandaise, überbacken</div><div class="item-price">9,00 €</div></div>
 
-  <div class="item">
-    <div class="item-name">56. Kebab-Auflauf</div>
-    <div class="item-desc">Kartoffelgratin, Kebab, Pilze, Tomaten, mit Käse überbacken</div>
-    <div class="item-price">9,50 €</div>
-  </div>
-
-  <!-- Beispiel: SNACKS -->
   <h2>Snacks</h2>
+  <div class="item"><div class="item-name">63. Chicken Nuggets (6 Stück)</div><div class="item-price">4,00 €</div></div>
+  <div class="item"><div class="item-name">64. Chicken Nuggets (9 Stück)</div><div class="item-price">5,00 €</div></div>
+  <div class="item"><div class="item-name">65. Chicken Nuggets (12 Stück)</div><div class="item-price">6,00 €</div></div>
+  <div class="item"><div class="item-name">66. Mozzarella Sticks (6 Stück)</div><div class="item-price">4,50 €</div></div>
+  <div class="item"><div class="item-name">67. Chili Cheese Nuggets (6 Stück)</div><div class="item-price">4,50 €</div></div>
+  <div class="item"><div class="item-name">68. Frühlingsrollen (6 Stück)</div><div class="item-price">4,00 €</div></div>
+  <div class="item"><div class="item-name">69. Chicken Wings (6 Stück)</div><div class="item-price">5,00 €</div></div>
+  <div class="item"><div class="item-name">70. Pommes</div><div class="item-price">3,00 € / 4,00 €</div></div>
+  <div class="item"><div class="item-name">71. Pommes "Spezial"</div><div class="item-desc">mit Soße und Zwiebeln</div><div class="item-price">4,00 € / 5,00 €</div></div>
+  <div class="item"><div class="item-name">72. Kroketten (10 Stück)</div><div class="item-price">4,00 €</div></div>
+  <div class="item"><div class="item-name">73. Twister Pommes</div><div class="item-price">4,50 €</div></div>
+  <div class="item"><div class="item-name">74. Kartoffeltaschen (6 Stück)</div><div class="item-desc">gefüllt mit Käse</div><div class="item-price">5,00 €</div></div>
+  <div class="item"><div class="item-name">75. Portion Kebab oder Hähnchen</div><div class="item-price">6,50 € / 8,50 €</div></div>
 
-  <div class="item">
-    <div class="item-name">70. Pommes</div>
-    <div class="item-price">3,00 € / 4,00 €</div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">75. Portion Kebab oder Hähnchen</div>
-    <div class="item-price">6,50 € / 8,50 €</div>
-  </div>
-
-  <!-- Hinweis -->
-  <div class="item" style="margin-top:40px; font-size:0.9em; color:#aaa;">
-    Alle Nudelgerichte mit <span style="color:#fca311;">🧀</span> sind mit Käse überbacken und mit Sauce nach Wahl. Allergene siehe Restaurant.
+  <h2>Extras & Soßen</h2>
+  <div class="item"><div class="item-name">Tzatziki / Knoblauchsoße / Cocktailsoße</div><div class="item-price">je 1,00 €</div></div>
+  <div class="item"><div class="item-name">Pizzabrötchen (8 Stück)</div><div class="item-price">2,50 €</div></div>
+  <div class="item"><div class="item-name">Pizzabrötchen mit Käse (8 Stück)</div><div class="item-price">4,50 €</div></div>
+    <div class="item" style="margin-top:40px; font-size:0.9em; color:#aaa;">
+    ⚠️ Alle Nudelgerichte mit <span style="color:#fca311;">🧀</span> sind mit Käse überbacken und mit Soße nach Wahl erhältlich.<br>
+    Allergene und Zusatzstoffe bitte direkt vor Ort erfragen.
   </div>
 
   <!-- Call-Button -->
